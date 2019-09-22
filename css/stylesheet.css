@@ -1,0 +1,321 @@
+/*                                                  */
+/* ____________________ Global ____________________ */
+/*                                                  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFDFA;
+    font-family: 'Roboto', sans-serif;
+    color: #4AA8CB;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+section {
+    width: 70%;
+    margin: auto;
+}
+
+/*                                                      */
+/* ____________________ Navigation ____________________ */
+/*                                                      */
+
+nav {
+    position: fixed;
+    top: 50px;
+    left: 5%;
+    line-height: 50px;
+    width: 100%;
+    animation: fadeIn 2s ease-in 0s;
+    z-index: 1;
+}
+
+nav a {
+    font-weight: 500;
+    color: #4AA8CB;
+}
+
+.nav-right {
+    position: fixed;
+    top: 50px;
+    right: 5%;
+}
+
+.nav-right a:first-child {
+    margin-right: 60px;
+}
+
+.nav-right a {
+    text-decoration: none;
+}
+
+.nav-right a:hover {
+    color: #FFE200;
+}
+
+/*                                                  */
+/* ____________________ Footer ____________________ */
+/*                                                  */
+
+footer {
+    position: fixed;
+    bottom: 50px;
+    left: 5%;
+    line-height: 50px;
+    width: 100%;
+    animation: fadeIn 2s ease-in 0s;
+}
+
+footer a {
+    font-weight: 500;
+    color: #4AA8CB;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 50px;
+    right: 5%;
+}
+
+.bottom-nav a:nth-child(1), .bottom-nav a:nth-child(2) {
+    margin-right: 60px;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+}
+
+.bottom-nav a:hover {
+    color: #FFE200;
+}
+
+.bottom-nav .fab {
+    transition: 0.3s ease all;
+}
+
+.bottom-nav .fab:hover {
+    transform: scale(1.2);
+}
+
+
+/*                                                            */
+/* _________________ Sam Ramirez Hero Title _________________ */
+/*                                                            */
+
+#logo {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: none;
+    animation: fill 1.5s ease forwards 4.5s;
+}
+
+
+#logo path:nth-child(1) {
+    stroke-dasharray: 507px;
+    stroke-dashoffset: 507px;
+    animation: line-anim 2s ease forwards;
+}
+
+#logo path:nth-child(2) {
+    stroke-dasharray: 445px;
+    stroke-dashoffset: 445px;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+
+#logo path:nth-child(3) {
+    stroke-dasharray: 681px;
+    stroke-dashoffset: 681px;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+
+#logo path:nth-child(4) {
+    stroke-dasharray: 624px;
+    stroke-dashoffset: 624px;
+    animation: line-anim 2s ease forwards 0.9s;
+}
+
+#logo path:nth-child(5) {
+    stroke-dasharray: 445px;
+    stroke-dashoffset: 445px;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+
+#logo path:nth-child(6) {
+    stroke-dasharray: 681px;
+    stroke-dashoffset: 681px;
+    animation: line-anim 2s ease forwards 1.5s;
+}
+
+#logo path:nth-child(7) {
+    stroke-dasharray: 253px;
+    stroke-dashoffset: 253px;
+    animation: line-anim 2s ease forwards 1.8s;
+}
+
+#logo path:nth-child(8) {
+    stroke-dasharray: 272.7px;
+    stroke-dashoffset: 272.7px;
+    animation: line-anim 2s ease forwards 2.1s;
+}
+
+#logo path:nth-child(9) {
+    stroke-dasharray: 398px;
+    stroke-dashoffset: 398px;
+    animation: line-anim 2s ease forwards 2.4s;
+}
+
+#logo path:nth-child(10) {
+    stroke-dasharray: 397px;
+    stroke-dashoffset: 397px;
+    animation: line-anim 2s ease forwards 2.7s;
+}
+
+/*                                                      */
+/* _________________ Background Lines _________________ */
+/*                                                      */
+
+.vertical-line {
+    top: 20vh;
+    height: 60vh;
+    width: 5px;
+    background-color: rgba(74, 169, 203, 0.3);
+    position: absolute;
+}
+
+.line-1 {
+    left: 10%;
+    animation-delay: 0.2s;
+}
+
+.line-2 {
+    right: 10%;
+    animation-delay: 0.6s;
+}
+
+.horizontal-line {
+    top: 0;
+    height: 5px;
+    width: 100%;
+    background-color: rgba(74, 169, 203, 0.3);
+    position: absolute;
+}
+
+.line-3 {
+    top: 40%;
+    animation-delay: 1s;
+}
+
+.line-4 {
+    top: 60%;
+    animation-delay: 1.4s;
+}
+
+.header-background {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 20vh;
+    background-image: linear-gradient(to bottom, #FFFDFA, transparent)
+}
+
+/*                                                          */
+/* _________________ Introduction Section _________________ */
+/*                                                          */
+
+.intro-section {
+    margin-top: 110vh;
+    animation-delay: 0.2s;
+}
+
+.intro-section h1, .intro-section p {
+    text-align: center;
+    line-height: 2em;
+}
+
+.skill-box {
+    max-width: 900px;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.fa-html5 {
+    color: #ff5511;
+    animation-delay: 0.3s;
+}
+
+.fa-css3-alt {
+    color: #1dacff;
+    animation-delay: 0.5s;
+}
+
+.fa-js {
+    color: rgb(255, 196, 0);
+    animation-delay: 0.7s;
+}
+
+.fa-sass {
+    color: #ff2a94;
+    animation-delay: 0.9s;
+}
+
+.fa-bootstrap {
+    color: #a51dff;
+    animation-delay: 1.1s;
+}
+
+.fa-react {
+    color: #1dacff;
+    animation-delay: 1.3s;
+}
+
+
+
+
+
+/*                                                          */
+/* _________________ Key Frame Animations _________________ */
+/*                                                          */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #4AA8CB;
+    }
+}
+  
