@@ -290,6 +290,7 @@ nav a {
 }
 
 .adobe-skill-box img {
+    height: 60px;
     width: 60px;
     margin: 20px;
 }
@@ -544,6 +545,7 @@ footer .copyright-container {
     }
     .skill-box i, .adobe-skill-box img {
         animation: none;
+        transform: scale(0.75);
     }
     .contact-container a li {
         transform: scale(0.75);
