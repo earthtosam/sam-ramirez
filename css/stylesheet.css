@@ -2,31 +2,64 @@
 /* ____________________ Global ____________________ */
 /*                                                  */
 
+@font-face {
+    font-family: "New York";
+    src: url('../fonts/NewYorkLarge-Regular.otf');
+}
+
+@font-face {
+    font-family: "SF Pro";
+    src: url('../fonts/SF-Pro-Text-Regular.otf');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 body {
-    width: 100%;
     height: 100vh;
+    width: 100%;
     background-color: #FFFDFA;
     font-family: 'Roboto', sans-serif;
-    color: #4AA8CB;
+    color: #707070;
 }
 
 h1 {
+    font-family: "New York";
     font-size: 2.5em;
+    line-height: 1em;
+}
+
+h2 {
+    font-family: "New York";
+    font-size: 2em;
+    line-height: 1.5em;
 }
 
 p {
+    font-family: "SF Pro";
     font-size: 1em;
+    line-height: 1.5em;
+    text-align: center;
 }
 
 section {
-    width: 70%;
-    margin: auto;
+    text-align: center;
+}
+
+.title-section {
+    margin: 110vh auto 0px;
+    width: 80%;
+    color: #707070;
+    text-align: center;
+}
+
+.title-section svg {
+    width: 250px;
+    margin: 10px auto;
 }
 
 /*                                                      */
@@ -34,97 +67,46 @@ section {
 /*                                                      */
 
 nav {
-    position: fixed;
-    top: 50px;
-    left: 5%;
     line-height: 50px;
-    width: 100%;
-    animation: fadeIn 2s ease-in 0s;
+    width: 50%;
     z-index: 1;
 }
 
+
 nav a {
     font-weight: 500;
-    color: #4AA8CB;
+    color: #ffffff;
 }
 
-.nav-right {
-    position: fixed;
+.nav-left {
+    position: absolute;
     top: 50px;
-    right: 5%;
-}
-
-.nav-right a:first-child {
-    margin-right: 60px;
-}
-
-.nav-right a {
-    text-decoration: none;
-}
-
-.nav-right a:hover {
-    color: #FFE200;
-}
-
-/*                                                  */
-/* ____________________ Footer ____________________ */
-/*                                                  */
-
-footer {
-    position: fixed;
-    bottom: 50px;
     left: 5%;
-    line-height: 50px;
-    width: 100%;
-    animation: fadeIn 2s ease-in 0s;
 }
 
-footer a {
-    font-weight: 500;
-    color: #4AA8CB;
-}
-
-.bottom-nav {
-    position: fixed;
-    bottom: 50px;
-    right: 5%;
-}
-
-.bottom-nav a:nth-child(1), .bottom-nav a:nth-child(2) {
-    margin-right: 60px;
-}
-
-.bottom-nav a {
+.nav-left a {
     text-decoration: none;
+    transition: 0.5s;
 }
 
-.bottom-nav a:hover {
-    color: #FFE200;
+.nav-left a:hover {
+    color: #1d3861;
 }
-
-.bottom-nav .fab {
-    transition: 0.3s ease all;
-}
-
-.bottom-nav .fab:hover {
-    transform: scale(1.2);
-}
-
 
 /*                                                            */
 /* _________________ Sam Ramirez Hero Title _________________ */
 /*                                                            */
 
 #logo {
-    width: 70%;
+    width: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     fill: none;
     animation: fill 1.5s ease forwards 4.5s;
+    z-index: 2;
 }
-
 
 #logo path:nth-child(1) {
     stroke-dasharray: 507px;
@@ -181,81 +163,81 @@ footer a {
 }
 
 #logo path:nth-child(10) {
-    stroke-dasharray: 397px;
-    stroke-dashoffset: 397px;
+    stroke-dasharray: 397.39px;
+    stroke-dashoffset: 397.39px;
     animation: line-anim 2s ease forwards 2.7s;
 }
 
-/*                                                      */
-/* _________________ Background Lines _________________ */
-/*                                                      */
-
-.vertical-line {
-    top: 20vh;
-    height: 60vh;
-    width: 5px;
-    background-color: rgba(74, 169, 203, 0.3);
+.span-title {
     position: absolute;
+    top: 60vh;
+    width: 90%;
+    left: 5%;
+    animation-delay: 4.5s;
+    z-index: 3;
 }
 
-.line-1 {
-    left: 10%;
-    animation-delay: 0.2s;
+.span-title h1 {
+    font-family: "SF Pro";
+    color: #ffffff;
+    font-size: 2.5em;
+    text-align: center;
 }
 
-.line-2 {
-    right: 10%;
-    animation-delay: 0.6s;
-}
+/*                                                      */
+/* _________________ Background Items _________________ */
+/*                                                      */
 
-.horizontal-line {
-    top: 0;
-    height: 5px;
+.background-image {
+    height: 100vh;
     width: 100%;
-    background-color: rgba(74, 169, 203, 0.3);
     position: absolute;
-}
-
-.line-3 {
-    top: 40%;
-    animation-delay: 1s;
-}
-
-.line-4 {
-    top: 60%;
-    animation-delay: 1.4s;
-}
-
-.header-background {
-    position: fixed;
     top: 0;
-    width: 100%;
-    height: 20vh;
-    background-image: linear-gradient(to bottom, #FFFDFA, transparent)
+    z-index: -10;
+    background-color: #60c5ff;
+    opacity: 1;
+}
+
+.background-rectangle {
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    width: 50%;
+    height: 40vh;
+    background-color: #8cd5ff;
+    z-index: -1;
+}
+
+.background-squiggle svg {
+    position: absolute;
+    top: 35vh;
+    right: 20%;
+    width: 300px;
+    z-index: 1;
 }
 
 /*                                                          */
 /* _________________ Introduction Section _________________ */
 /*                                                          */
 
-.intro-section {
-    margin-top: 110vh;
-    animation-delay: 0.2s;
-}
-
-.intro-section h1, .intro-section p {
-    text-align: center;
-    line-height: 2em;
+.intro-section-container {
+    margin: 50px auto 0px;
+    width: 90%;
+    max-width: 1300px;
+    box-shadow: 2px 2px 10px #d4d4d4;
+    padding: 50px;
 }
 
 .skill-box {
-    max-width: 900px;
-    margin-top: 30px;
+    width: 100%;
+    margin: 0px auto;
     display: flex;
     flex-flow: wrap;
-    flex-direction: row;
     justify-content: space-evenly;
-    
+}
+
+.skill-box i {
+    margin: 20px;
 }
 
 .fa-html5 {
@@ -288,13 +270,231 @@ footer a {
     animation-delay: 1.3s;
 }
 
+/* Adobe Subsection */
+.adobe-section-container {
+    margin: 50px auto 0px;
+    width: 90%;
+    max-width: 1300px;
+    padding: 50px;
+    box-shadow: 2px 2px 10px #d4d4d4;
+    padding: 50px;
+}
 
+.adobe-skill-box {
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+
+.adobe-skill-box img {
+    width: 60px;
+    margin: 20px;
+}
+
+.Adobe-1 {
+    animation-delay: 0.3s;
+}
+
+.Adobe-2 {
+    animation-delay: 0.5s;
+}
+
+.Adobe-3 {
+    animation-delay: 0.7s;
+}
+
+.Adobe-4 {
+    animation-delay: 0.9s;
+}
+
+
+/*                                                */
+/* _________________ Work Title _________________ */
+/*                                                */
+
+.work-title {
+    margin: 150px auto 0px;
+}
+
+/*                                                            */
+/* _________________ * Work Sections * _________________ */
+/*                                                            */
+
+.work-section {
+    width: 100%;
+    margin: 50px auto 100px;
+    background-image: linear-gradient(to top right, #ffcbcb, #fce8ff);
+}
+
+.work-section img {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    margin: 50px auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.work-info {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0px auto;
+    padding-bottom: 50px;
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+.work-info h2 {
+    border-bottom: 2px dotted #707070;
+}
+
+.work-info p {
+    margin: 20px auto;
+}
+
+.work-links {
+    width: 50%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.work-links a {
+    cursor: pointer;
+    padding: 5px 20px;
+    margin: 10px;
+    color: #ffffff;
+    background-color: #707070;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.work-links a:hover {
+    background-color: #1d3861;
+    color: #ffffff;
+}
+
+/* Lyft Bag Subsection */
+.lyftbag-section {
+    background-image: linear-gradient(to top right, #c6f8ff, #e5ffcc);
+}
+
+/* Checkers Subsection */
+.checkers-section {
+    background-image: linear-gradient(to top right, #ffcdcd, #ebebeb);
+}
+
+/* Sound Maker Subsection */
+.soundmaker-section {
+    background-image: linear-gradient(to top right, #c5e5ff, #bbfffc, #fff8d3, #ffe2cb, #ffc5d4, #f5caca);
+}
+
+/* To-Do List Subsection */
+.todolist-section {
+    background-image: linear-gradient(to top right, #c8e6ff, #ececec);
+}
+
+/*                                                      */
+/* _________________ Contact Sections _________________ */
+/*                                                      */
+
+.contact-title {
+    margin: 150px auto 50px;
+}
+
+.contact-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto 100px;
+}
+
+.contact-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contact-container ul a {
+    margin: 20px;
+}
+
+.contact-container ul li:hover {
+    transform: scale(1.1);
+}
+
+.contact-container ul a li {
+    list-style: none;
+    transition: 0.3s;
+    text-decoration: none;
+    color: #707070;
+}
+
+.icon {
+    transition: 0.3s;
+}
+
+.github-icon:hover {
+    color: #000000;
+}
+
+.linkedin-icon:hover {
+    color: #006ec9;
+}
+
+.behance-icon:hover {
+    color: #003cff;
+}
+
+.mail-icon:hover {
+    color: #00c3ff;
+}
+
+.phone-icon:hover {
+    color: #00d612;
+}
+
+/* Contact Icon Animation Delays Subsection */
+.contact-container a:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.contact-container a:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.contact-container a:nth-child(4) {
+    animation-delay: 0.7s;
+}
+
+.contact-container a:nth-child(5) {
+    animation-delay: 0.9s;
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: #60c5ff;
+    border: 1px solid transparent;
+}
+
+footer .copyright-container {
+    width: 90%;
+    margin: 50px auto;
+    color: #ffffff;
+}
 
 
 
 /*                                                          */
 /* _________________ Key Frame Animations _________________ */
 /*                                                          */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -319,3 +519,36 @@ footer a {
     }
 }
   
+
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    p, a {
+        font-size: 0.75em;
+    }
+    .span-title h1 {
+        font-size: 1.5em;
+    }
+    .nav-left {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .background-squiggle svg {
+        width: 60%;
+    }
+    .title-section svg {
+        width: 60%;
+    }
+    .skill-box i, .adobe-skill-box img {
+        transform: scale(0.75);
+        animation: none;
+    }
+    .contact-container a li {
+        transform: scale(0.75);
+    }
+}
