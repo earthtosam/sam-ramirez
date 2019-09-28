@@ -271,46 +271,10 @@ nav a {
     animation-delay: 1.3s;
 }
 
-/* Adobe Subsection */
-.adobe-section-container {
-    margin: 50px auto 0px;
-    width: 90%;
-    max-width: 1300px;
-    padding: 50px;
-    box-shadow: 2px 2px 10px #d4d4d4;
-    padding: 50px;
+.fa-adobe {
+    color: #ff0000;
+    animation-delay: 1.5s;
 }
-
-.adobe-skill-box {
-    width: 100%;
-    margin: 0px auto;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-evenly;
-}
-
-.adobe-skill-box img {
-    height: 60px;
-    width: 60px;
-    margin: 20px;
-}
-
-.Adobe-1 {
-    animation-delay: 0.3s;
-}
-
-.Adobe-2 {
-    animation-delay: 0.5s;
-}
-
-.Adobe-3 {
-    animation-delay: 0.7s;
-}
-
-.Adobe-4 {
-    animation-delay: 0.9s;
-}
-
 
 /*                                                */
 /* _________________ Work Title _________________ */
@@ -543,7 +507,7 @@ footer .copyright-container {
     .title-section svg {
         width: 60%;
     }
-    .skill-box i, .adobe-skill-box img {
+    .skill-box i {
         animation: none;
         transform: scale(0.75);
     }
