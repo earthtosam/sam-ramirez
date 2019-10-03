@@ -53,6 +53,7 @@ section {
 .title-section {
     margin: 110vh auto 0px;
     width: 80%;
+    max-width: 1300px;
     color: #707070;
     text-align: center;
 }
@@ -218,8 +219,12 @@ nav a {
 }
 
 /*                                                          */
-/* _________________ Introduction Section _________________ */
+/* _________________ Skills Section _________________ */
 /*                                                          */
+
+.skill-title {
+    margin: 150px auto 0px;
+}
 
 .intro-section-container {
     margin: 50px auto 0px;
@@ -320,7 +325,7 @@ nav a {
 .work-info p {
     margin: 20px auto;
 }
-.work-info i {
+.work-info .fab {
     margin: 20px 10px 0px;
 }
 
