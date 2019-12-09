@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/stylesheet.css">
     <link rel="stylesheet" href="./css/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="icon" href="./images/sam_favicon.png">
+    <link rel="icon" href="./images/favicon.png">
     <script src="https://kit.fontawesome.com/4bc9f4da23.js" crossorigin="anonymous"></script>
     <title>Sam Ramirez</title>
 </head>
@@ -16,6 +15,26 @@
 <body>
 
     <!-- ____________________ Sam Ramirez Hero Title ____________________ -->
+
+    <!-- Nav Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html"><img src="./images/logo.png" alt=""></a>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In  -->
     <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -76,111 +95,70 @@
         <h1>Web Developer & Graphic Designer</h1>
     </div>
 
-    <!-- ____________________ Background Items ____________________ -->
-
-    <div class="background-image"></div>
-    <div class="background-rectangle"></div>
-    </div>
-
     <!-- ____________________ About Section ____________________ -->
 
-    <section class="title-section">
+    <section class="title-section about-title wow fadeInUp" id="about">
+        <img src="./images/about_me_image.png" class="wow fadeInUp delay-2s" alt="">
         <h1>About Me</h1>
-        <div class="title-border"></div>
-        <p>I’ve always wanted to work in the tech industry. From that desire I came across Web Development. I fell in
-            love and I couldn't get enough of it ever since. I started learning the basics from HTML/CSS to Javascript,
-            and I continue to learn new and exciting secrets every day. I’m hoping to bring that passion and skill into
-            a fulfilling role.</p>
+        <p>I'm a web & graphic designer based in Salinas CA. I’ve always had an itch for design, wherever I looked. And
+            as soon as I stepped into the world of web development, I found myself hooked from the beginnning. I have a
+            passion for web design and love working on projects that revolve around design. I’ve been freelancing with
+            local projects, but hope to work with a team to contribute my passion and dedication into the role.</p>
     </section>
 
+    <div class="title-border"></div>
     <!-- ____________________ Skills Section ____________________ -->
 
-    <section class="title-section skill-title">
-        <h1>Skills</h1>
-        <div class="title-border"></div>
-        <p>These are the languages and tools that I work with. I keep learning new and exciting ways to use them and
-            implement them in my work. Along with that, I use the Adobe Creative Suite. I've dabbled with most Adobe
-            applications, but I'm mostly proficient with Illustrator, Photoshop, InDesign, and XD.</p>
+    <section class="title-section skill-title wow fadeInUp">
+        <img src="./images/devices.png" class="wow fadeInUp delay-2s" alt="">
+        <h1>What I do</h1>
+        <p>I help people and businesses bring their work and passion into the digital space. I work with them to display
+            their personality into the project, by focusing on design. Typography and UI/UX design is my favorite part
+            in development. This helps deliver a better and memorable user
+            experience that benefits everyone involved.</p>
     </section>
 
-    <div class="intro-section-container wow fadeInLeft">
-        <section class="skill-box">
-            <div>
-                <i class="fab fa-html5 fa-4x wow fadeInLeft"></i>
-                <p>HTML</p>
-            </div>
-            <div>
-                <i class="fab fa-css3-alt fa-4x wow fadeInLeft"></i>
-                <p>CSS</p>
-            </div>
-            <div>
-                <i class="fab fa-js fa-4x wow fadeInLeft"></i>
-                <p>Javascript</p>
-            </div>
-            <div>
-                <i class="fab fa-sass fa-4x wow fadeInLeft"></i>
-                <p>Sass</p>
-            </div>
-            <div>
-                <i class="fab fa-bootstrap fa-4x wow fadeInLeft"></i>
-                <p>Bootstrap</p>
-            </div>
-            <div>
-                <i class="fab fa-react fa-4x wow fadeInLeft"></i>
-                <p>React</p>
-            </div>
-            <div>
-                <i class="fab fa-adobe fa-4x wow fadeInLeft"></i>
-                <p>Adobe Suite</p>
-        </section>
-    </div>
-
+    <div class="title-border"></div>
     <!-- ____________________ Work Title ____________________ -->
 
-    <div class="title-section work-title">
+    <section class="title-section work-title wow fadeInUp" id="portfolio">
+        <img src="./images/briefcase.png" class="wow fadeInUp delay-2s" alt="">
         <h1>Work</h1>
-        <div class="title-border"></div>
-        <p>Below are my recent projects that I've been working on. You can find the links to the live webpage or source
+        <p>Below are my recent projects that I've been working on. They range from a downtown restaurant to an
+            independent photographer. You can find the links to the live webpage or source
             code down below.</p>
-    </div>
-
+    </section>
     <!-- ____________________ * Work Sections * ____________________ -->
 
     <!-- ____________________ Food Wizard Project ____________________ -->
 
-    <div class="work-section foodwizard-section wow fadeInLeft">
-        <img src="./images/food-wizard-UI.png" alt="Food Wizard Project">
+    <div class="work-section work-one-section wow fadeInLeft">
+        <img src="./images/islas-ui.png" alt="Food Wizard Project">
         <div class="work-info">
-            <h2>Food Wizard</h2>
-            <i class="fab fa-html5 fa-2x"></i>
-            <i class="fab fa-css3-alt fa-2x"></i>
-            <i class="fab fa-js fa-2x"></i>
-            <i class="fab fa-react fa-2x"></i>
-            <i class="fab fa-adobe fa-2x"></i>
-            <p>A fun web app that generates a list of ten recipes for the food of your choice. Type in something your
-                craving, and you'll be surprised to find your next favorite dish.</p>
+            <h2>Islas Marietas Restaurant</h2>
+            <p>UI/ Web Design</p>
+            <p>I developed a webpage for a mexican seafood restaurant in downtown Salinas. I also helped in re-adjusting
+                their restaurant logo and doing on-site photography of their restaurant and dishes.</p>
             <div class="work-links">
-                <a href="https://earthtosam.github.io/food-recipes/" target="blank_">View Online</a>
-                <a href="https://github.com/earthtosam/food-recipes" target="blank_">See Code</a>
+                <a href="https://www.theislasmarietas.com/" target="blank_">View Online</a>
+                <a href="https://github.com/earthtosam/islas-marietas-temp" target="blank_">See Code</a>
             </div>
         </div>
     </div>
 
     <!-- ____________________ Visual Designs Project ____________________ -->
 
-    <div class="work-section wow fadeInRight">
-        <img src="./images/Visual Designs UI.png" alt="">
+    <div class="work-section work-two-section wow fadeInRight">
+        <img src="./images/sfp-ui.png" alt="">
         <div class="work-info">
-            <h2>Visual Designs</h2>
-            <i class="fab fa-html5 fa-2x"></i>
-            <i class="fab fa-css3-alt fa-2x"></i>
-            <i class="fab fa-js fa-2x"></i>
-            <i class="fab fa-adobe fa-2x"></i>
-            <p>A webpage centered around a web design/development freelance business. The concept was based around a
-                colorful gradient that symoblized the two skills being brought together.</p>
+            <h2>Salinas Family Practice</h2>
+            <p>UI/ Web Design</p>
+            <p>Previously working in the clinic, I was given the opportunity to redesign their webpage. I focused
+                heavily in the UI & UX by making it more accesible to anyone who visted the webpage to contact the
+                clinic.</p>
             <div class="work-links">
-                <a href="https://visualdesigns.org/" target="blank_">View Online</a>
-                <a href="https://github.com/earthtosam/Visual-Designs-0" target="blank_">See Code</a>
+                <a href="https://earthtosam.github.io/sfpclinic/index.html" target="blank_">View Online</a>
+                <a href="https://github.com/earthtosam/sfpclinic" target="blank_">See Code</a>
             </div>
         </div>
     </div>
@@ -188,81 +166,80 @@
 
     <!-- ____________________ Lyft Bag Project ____________________ -->
 
-    <!--        <div class="work-section lyftbag-section wow fadeInLeft">
-                <img src="./images/Lyft Bag UI.png" alt="">
-                <div class="work-info">
-                    <h2>Lyft Bag</h2>
-                    <p>A simple concept, with a big impact! Every purchase of a lyft Bag brings more awareness to keep the Earth and water clean. The color pallete seemed obvious and came... naturally.</p>
-                    <div class="work-links">
-                        <a>View Online</a>
-                        <a>See Code</a>
+    <!--        
+                <div class="work-section lyftbag-section wow fadeInLeft">
+                    <img src="./images/Lyft Bag UI.png" alt="">
+                    <div class="work-info">
+                        <h2>Lyft Bag</h2>
+                        <p>A simple concept, with a big impact! Every purchase of a lyft Bag brings more awareness to keep the Earth and water clean. The color pallete seemed obvious and came... naturally.</p>
+                        <div class="work-links">
+                            <a>View Online</a>
+                            <a>See Code</a>
+                        </div>
                     </div>
-                </div>
-            </div>              -->
+                </div>   
+    -->
 
 
     <!-- ____________________ Sound Maker Project ____________________ -->
 
-    <div class="work-section soundmaker-section wow fadeInLeft">
-        <img src="./images/sound-maker-UI.png" alt="Sound Maker Project">
+    <div class="work-section work-three-section wow fadeInLeft">
+        <img src="./images/jess-ui.png" alt="Sound Maker Project">
         <div class="work-info">
-            <h2>Sound Maker</h2>
-            <i class="fab fa-html5 fa-2x"></i>
-            <i class="fab fa-css3-alt fa-2x"></i>
-            <i class="fab fa-js fa-2x"></i>
-            <i class="fab fa-adobe fa-2x"></i>
-            <p>If you're not interested in chess, then hopefully checkers is more up your alley. The fantastic Checkers
-                Label concept grew from just one board game, to every board game imaginable.</p>
+            <h2>Jess C. Art</h2>
+            <p>UI/ Web Design</p>
+            <p>Jess C. is a local on-air personality at iHeart Radio who creates art pieces. I worked with her to make a
+                webpage to showcase her work, by making it minimalist and drawing inspiration from a blank canvas.</p>
             <div class="work-links">
-                <a href="https://earthtosam.github.io/Sound-Maker/" target="blank_">View Online</a>
-                <a href="https://github.com/earthtosam/Sound-Maker" target="blank_">See Code</a>
+                <a href="https://www.itssjessc.com/" target="blank_">View Online</a>
+                <a href="https://github.com/earthtosam/itssjessc" target="blank_">See Code</a>
             </div>
         </div>
     </div>
 
     <!-- ____________________ To-Do List Project ____________________ -->
 
-    <div class="work-section todolist-section wow fadeInRight">
-        <img src="./images/to-do-list-UI.png" alt="To-Do List Project">
+    <div class="work-section work-four-section wow fadeInRight">
+        <img src="./images/saul831-ui.png" alt="To-Do List Project">
         <div class="work-info">
-            <h2>To-Do List</h2>
-            <i class="fab fa-html5 fa-2x"></i>
-            <i class="fab fa-css3-alt fa-2x"></i>
-            <i class="fab fa-js fa-2x"></i>
-            <p>If you're not interested in chess, then hopefully checkers is more up your alley. The fantastic Checkers
-                Label concept grew from just one board game, to every board game imaginable.</p>
+            <h2>Saul G. Photography</h2>
+            <p>Web Design/ Wordpress Theme</p>
+            <p>A local photographer who specializes in aviation photography. I wanted to create a webpage that matched
+                his photography, and going with the color and typography that demonstrates his personality.</p>
             <div class="work-links">
-                <a href="https://earthtosam.github.io/to-do-list/" target="blank_">View Online</a>
-                <a href="https://github.com/earthtosam/to-do-list" target="blank_">See Code</a>
+                <a href="https://www.saul831.com/" target="blank_">View Online</a>
+                <a href="https://github.com/earthtosam/saul831" target="blank_">See Code</a>
             </div>
         </div>
     </div>
 
+    <div class="title-border"></div>
     <!-- ____________________ Checkers Project ____________________ -->
 
-    <div class="work-section checkers-section wow fadeInLeft">
-        <img src="./images/checkers-UI.png" alt="Checkers Project">
-        <div class="work-info">
-            <h2>Checkers Board Games</h2>
-            <i class="fab fa-html5 fa-2x"></i>
-            <i class="fab fa-css3-alt fa-2x"></i>
-            <i class="fab fa-adobe fa-2x"></i>
-            <p>If you're not interested in chess, then hopefully checkers is more up your alley. The fantastic Checkers
-                Label concept grew from just one board game, to every board game imaginable.</p>
-            <div class="work-links">
-                <a href="https://earthtosam.github.io/checkers/" target="blank_">View Online</a>
-                <a href="https://github.com/earthtosam/checkers" target="blank_">See Code</a>
-            </div>
-        </div>
-    </div>
+    <!--             
+                <div class="work-section checkers-section wow fadeInLeft">
+                    <img src="./images/checkers-UI.png" alt="Checkers Project">
+                    <div class="work-info">
+                        <h2>Checkers Board Games</h2>
+                        <i class="fab fa-html5 fa-2x"></i>
+                        <i class="fab fa-css3-alt fa-2x"></i>
+                        <i class="fab fa-adobe fa-2x"></i>
+                        <p>If you're not interested in chess, then hopefully checkers is more up your alley. The fantastic Checkers
+                            Label concept grew from just one board game, to every board game imaginable.</p>
+                        <div class="work-links">
+                            <a href="https://earthtosam.github.io/checkers/" target="blank_">View Online</a>
+                            <a href="https://github.com/earthtosam/checkers" target="blank_">See Code</a>
+                        </div>
+                    </div>
+                </div>
+    -->
 
     <!-- ____________________ Contact Title ____________________ -->
 
-    <div class="title-section contact-title">
+    <section class="title-section contact-title" id="contact">
         <h1>Contact</h1>
-        <div class="title-border"></div>
         <p>Feel free to contact me through email, phone or these sites:</p>
-    </div>
+    </section>
 
     <div class="contact-container">
         <ul>
@@ -296,7 +273,7 @@
 
     <footer>
         <div class="copyright-container">
-            <p>© 2019 All Rights Reserved. Sam Ramirez</p>
+            <p>© 2019 All Rights Reserved. Developed by Sam Ramirez</p>
         </div>
     </footer>
 
