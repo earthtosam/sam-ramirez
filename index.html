@@ -124,9 +124,16 @@
             code down below.</p>
     </section>
 
+    <!-- Work Section -->
+    <!-- Control buttons -->
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('web')">Web</button>
+        <button class="btn" onclick="filterSelection('graphic')">Graphic</button>
+    </div>
+
     <!-- Islas Marietas Restaurant -->
-    <div class="work-section work-one-section wow fadeInLeft">
-        <img src="./images/islas-ui.png" alt="Food Wizard Project">
+    <div class="work-section work-one-section wow fadeInLeft filterDiv web">
+        <img src="./images/islas-ui.png" alt="Islas Marietas Restaurant">
         <div class="work-info">
             <h2>Islas Marietas Restaurant</h2>
             <p>Web Design / UI / UX</p>
@@ -140,8 +147,8 @@
     </div>
 
     <!-- Salinas Family Practice -->
-    <div class="work-section work-two-section wow fadeInRight">
-        <img src="./images/sfp-ui.png" alt="">
+    <div class="work-section work-two-section wow fadeInRight filterDiv web">
+        <img src="./images/sfp-ui.png" alt="Salinas Family Practice">
         <div class="work-info">
             <h2>Salinas Family Practice</h2>
             <p>Web Design / UI / UX</p>
@@ -156,8 +163,8 @@
     </div>
 
     <!-- Jess C. Art -->
-    <div class="work-section work-three-section wow fadeInLeft">
-        <img src="./images/jess-ui.png" alt="Sound Maker Project">
+    <div class="work-section work-three-section wow fadeInLeft filterDiv web">
+        <img src="./images/jess-ui.png" alt="Jess C. Art">
         <div class="work-info">
             <h2>Jess C. Art</h2>
             <p>Web Design / UI / Bootstrap</p>
@@ -171,8 +178,8 @@
     </div>
 
     <!-- Saul G. Photography -->
-    <div class="work-section work-four-section wow fadeInRight">
-        <img src="./images/saul831-ui.png" alt="To-Do List Project">
+    <div class="work-section work-four-section wow fadeInRight filterDiv web">
+        <img src="./images/saul831-ui.png" alt="Saul G. Photography">
         <div class="work-info">
             <h2>Saul G. Photography</h2>
             <p>Web Design / UI / Bootstrap</p>
@@ -184,6 +191,57 @@
             </div>
         </div>
     </div>
+
+    <!-- Churro Heaven Design -->
+    <div class="work-section work-five-section wow fadeInRight filterDiv graphic">
+        <img src="./images/Churro.png" alt="Churro Heaven">
+        <div class="work-info">
+            <h2>Churro Heaven</h2>
+            <p>Adobe Suite / Vector Design</p>
+            <div class="work-links">
+                <a href="https://www.behance.net/gallery/84529111/Churro-Heaven" target="blank_">See on Behance</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visual Designs Design -->
+    <div class="work-section work-six-section wow fadeInRight filterDiv graphic">
+        <img src="./images/VisualDesigns.png" alt="Visual Designs">
+        <div class="work-info">
+            <h2>Visual Designs</h2>
+            <p>Adobe Suite / Gradient Design</p>
+            <div class="work-links">
+                <a href="https://www.behance.net/gallery/83754057/Visual-Designs-Logo" target="blank_">See on
+                    Behance</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lyft Bag Design -->
+    <div class="work-section work-seven-section wow fadeInRight filterDiv graphic">
+        <img src="./images/LyftBag.png" alt="Lyft Bag">
+        <div class="work-info">
+            <h2>Lyft Bag</h2>
+            <p>Adobe Suite / Logo Design</p>
+            <div class="work-links">
+                <a href="https://www.behance.net/gallery/82402681/Lyft-Bag-Logo" target="blank_">See on Behance</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ying Yang Donut Design -->
+    <div class="work-section work-eight-section wow fadeInRight filterDiv graphic">
+        <img src="./images/YingYangDonut.png" alt="Ying Yang Donut">
+        <div class="work-info">
+            <h2>Ying Yang Donut</h2>
+            <p>Adobe Suite / Logo Design</p>
+            <div class="work-links">
+                <a href="https://www.behance.net/gallery/82535815/Yin-Yang-Donut-Logo" target="blank_">See on
+                    Behance</a>
+            </div>
+        </div>
+    </div>
+
     <div class="title-border"></div>
 
     <!-- Contact Title -->
@@ -233,6 +291,7 @@
     <!-- Scripts -->
     <script src="./javascript/app.js"></script>
     <script src="./javascript/stickyNav.js"></script>
+    <script src="./javascript/filterWork.js"></script>
     <script src="./javascript/wow.min.js"></script>
     <script>
         new WOW().init();
