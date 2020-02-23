@@ -12,6 +12,10 @@
           box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -172,11 +176,11 @@ nav {
   padding-left: 70px;
 }
 
-.button-section .block-yellow {
+.button-section .block-yellow a {
   background-color: #FCFFB1;
 }
 
-.button-section .block-yellow:hover {
+.button-section .block-yellow a:hover {
   background-color: #ffcf4a;
   cursor: default;
 }
@@ -482,6 +486,12 @@ footer .footer-wrapper {
     width: 240px;
     height: 240px;
     top: 450px;
+  }
+  .circle-container .c-4 {
+    left: 45%;
+  }
+  .circle-container .c-5 {
+    right: 5%;
   }
 }
 

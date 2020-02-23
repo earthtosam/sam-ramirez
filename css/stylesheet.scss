@@ -20,6 +20,9 @@ $sfpColor: #f1d5ff;
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    overflow-x: hidden;
+}
 body {
     overflow-x: hidden;
 }
@@ -155,10 +158,10 @@ nav {
         background-color: $hoverColor;
         padding-left: 70px;
     }
-    .block-yellow {
+    .block-yellow a {
         background-color: $highlightColor;
     }
-    .block-yellow:hover {
+    .block-yellow a:hover {
         background-color: $hoverHighlightColor;
         cursor: default;
     }
@@ -423,6 +426,12 @@ footer {
             width: 240px;
             height: 240px;
             top: 450px;
+        }
+        .c-4 {
+            left: 45%;
+        }
+        .c-5 {
+            right: 5%;
         }
     }
 }
