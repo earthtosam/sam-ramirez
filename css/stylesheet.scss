@@ -184,7 +184,7 @@ nav {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     .modal-content {
         background-color: #fefefe;
-        margin: 15% auto; /* 15% from the top and centered */
+        margin: 5% auto; /* 15% from the top and centered */
         padding: 20px;
         width: 80%; /* Could be more or less, depending on screen size */
     }
@@ -329,13 +329,13 @@ footer {
         .c-4 {
             width: 160px;
             height: 160px;
-            left: 75%;
+            left: 65%;
             top: 600px;
         }
         .c-5 {
             width: 120px;
             height: 120px;
-            right: -5%;
+            right: 5%;
             top: 80px;
             z-index: 10;
         }
@@ -427,11 +427,33 @@ footer {
             height: 240px;
             top: 450px;
         }
+        .c-3 {
+            width: 20px;
+            height: 20px;
+            left: 2%;
+            top: 140px;
+        }
         .c-4 {
-            left: 45%;
+            width: 120px;
+            height: 120px;
+            left: 50%;
+            top: 680px;
         }
         .c-5 {
+            width: 40px;
+            height: 40px;
             right: 5%;
+            top: 120px;
+        }
+    }
+    /* Carousel Section */
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    height: 400px;
+                }
+            }
         }
     }
 }
