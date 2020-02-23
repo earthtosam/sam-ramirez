@@ -135,21 +135,23 @@ nav {
     button {
         display: block;
         position: relative;
-        margin: 40px 0px;
-        padding-left: 40px;
-        height: 10px;
         border: none;
-        background-color: $primaryColor;
-        transition: 0.5s ease all;
+        background-color: transparent;
         a {
             display: block;
+            margin: 20px 0px;
+            padding-left: 40px;
+            height: 10px;
+            border: none;
+            background-color: $primaryColor;
             color: $fontcolor;
             text-decoration: none;
             font-weight: 100;
             font-style: italic;
+            transition: 0.5s ease all;
         }
     }
-    button:hover {
+    button a:hover {
         background-color: $hoverColor;
         padding-left: 70px;
     }
