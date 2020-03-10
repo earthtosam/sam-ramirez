@@ -184,6 +184,7 @@ nav {
 .button-section button a:hover {
   background-color: #6fcdff;
   padding-left: 70px;
+  padding-right: 10px;
 }
 
 .button-section .block-yellow a {
