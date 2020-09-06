@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/seefood-app/precache-manifest.7e5a6cdde0c43548cd843f08709aaf78.js"
+  "/sam-ramirez/precache-manifest.7e5a6cdde0c43548cd843f08709aaf78.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/seefood-app/index.html"), {
-  
-  blacklist: [/^\/_/,/\/[^\/?]+\.[^\/]+$/],
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/sam-ramirez/index.html"), {
+
+  blacklist: [/^\/_/, /\/[^\/?]+\.[^\/]+$/],
 });
