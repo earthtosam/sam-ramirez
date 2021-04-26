@@ -2321,9 +2321,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .p1-gradient-bg, .banner-left .primary-btn, .home-about-right .primary-btn, .facts-area, .thumb .overlay-bg, .price-area .single-price:hover, .brands-area, .about-banner, .sb_bar {
-  background: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-  background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-  background: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  background: #8490ff;
 }
 
 .p1-gradient-color, .single-services:hover .lnr {
@@ -2439,7 +2437,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*-------- Start Banner Area ------------*/
 .banner-area {
-  background: #f9f9ff;
+  background-image: url('../img/hero-section.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .banner-area .fullscreen {
@@ -2495,6 +2496,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*-------- End Banner Area ------------*/
 /*-------- Start home-about Area ------------*/
+.home-about-area-hero {
+  background-image: url('../img/hero-section-flip.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 767px) {
   .home-about-right {
     margin-top: 30px;
@@ -2508,12 +2516,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .home-about-right h1 {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 991px) {
   .home-about-right h1 {
-    font-size: 20px;
+    font-size: 36px;
   }
 }
 
@@ -3543,8 +3551,8 @@ dl.accordion.time-line:before {
 }
 
 .post-content-area .single-post .primary-btn {
-  background: #fff !important;
-  color: #222 !important;
+  background: #8490ff !important;
+  color: #fff !important;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -4483,3 +4491,4 @@ dl.accordion.time-line:before {
 }
 
 /*-------- end footer Area -------------*/
+
