@@ -18,6 +18,7 @@ body {
 }
 
 .button {
+  width: auto;
   color: #ffffff;
   padding: 12px 24px;
   background-image: linear-gradient(to top right, #4897F4, #1C80F5);
@@ -236,7 +237,8 @@ section .section-details .m-left {
 }
 
 .project-info p {
-  margin-bottom: 36px;
+  padding-bottom: 36px;
+  overflow: visible;
 }
 
 
@@ -257,7 +259,8 @@ section .section-details .m-left {
 
   .project-card {
     margin: 0px auto 50px;
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   .project-card img {
     width: 100%;
