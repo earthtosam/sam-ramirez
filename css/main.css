@@ -116,7 +116,7 @@ footer .footer-links .button {
 /** Sections **/
 
 section {
-  margin: 100px 30px;
+  margin: 150px 30px;
 }
 
 section h1 {
@@ -129,10 +129,15 @@ section h1 {
 
 section .project-details {
   display: flex;
+  background-color: #ffffff;
+  padding: 20px 40px;
+  margin-top: -4px;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0px 3px 20px rgb(93, 155, 255, 0.20);
 }
 
 section .project-details h2 {
-  margin: 30px auto 10px;
+  margin: 10px auto 10px;
 }
 
 section .project-details p {
@@ -140,7 +145,7 @@ section .project-details p {
 }
 
 section .project-details span {
-  color: #1C80F5;
+  font-style: italic;
   font-weight: bold;
 }
 
@@ -166,10 +171,14 @@ section .section-details .details {
 }
 
 section .section-details .details h2 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 section .section-details .details span {
+  color: #1C80F5;
+}
+
+section h1 span {
   color: #1C80F5;
 }
 
@@ -199,6 +208,16 @@ section .project-buttons .m-left {
 
 section .section-details .m-left {
   margin-left: 30px;
+}
+
+section .inline {
+  display: flex !important;
+  align-items: center;
+}
+
+section .inline a {
+  min-width: 250px;
+  text-align: center;
 }
 
 
@@ -247,7 +266,7 @@ section .section-details .m-left {
 #cover-image {
   width: 100% !important;
   max-width: 1400px;
-  border-radius: 20px;
+  border-radius: 20px 20px 0px 0px;
 }
 
 /** Media Queries **/
@@ -256,6 +275,9 @@ section .section-details .m-left {
 
   /** Home Page **/
 
+  nav {
+    padding: 30px 20px;
+  }
   .project-card {
     margin: 0px auto 50px;
     display: flex;
@@ -317,10 +339,10 @@ section .section-details .m-left {
     border-radius: 10px;
   }
   section .project-details h2 {
-    margin: 30px auto 10px;
+    margin: 0px auto 10px;
   }
   section .project-details p {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   section .details-box-col p {
     margin-bottom: 10px;
