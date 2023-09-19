@@ -169,6 +169,10 @@ section .section-details .details {
   margin: auto 50px auto 0px;
 }
 
+section .section-details .details p {
+  line-height: 32px;
+}
+
 section .section-details .details h2 {
   margin-bottom: 10px;
   font-size: 32px;
