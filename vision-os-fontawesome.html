@@ -96,8 +96,10 @@
     </section>
 
     <section>
-        <div class="section-details">
+        <div class="image-section">
             <img src="./img/vision-os/tab-bar-sketch.jpg">
+        </div>
+        <div class="section-details">
             <div class="details">
                 <h2>Simplifying the flow with a Tab Bar</h2>
                 <p>As for the tab bar, Apple recommends between 2 to 6 icons as to not overwhelm the user with options. This is meant to act as the tab bar traditionally seen at the bottom of iOS app. So, the tab bar would naturally fit that model. For the purposes of this project, exploration and inspiration are at the heart of this application. I want users to quickly shuffle from exploring, to viewing previously saved assets, download management for assets saved on the device, and an account page.</p>
@@ -118,12 +120,14 @@
     </section>
 
     <section>
+        <div class="image-section">
+            <img src="./img/vision-os/ornaments-sketch.jpg">
+        </div>
         <div class="section-details">
             <div class="details">
                 <h2>Ornaments with a purpose</h2>
                 <p>Ornaments were also components that could have utility in this application, displaying actionable sub-information. However, the purpose of this component is to showcase information or actions that the user can take outside of that page. There was no clear purpose of utilizing an ornament that only served each page independently. However, downloads have that utility opportunity, making use of showing download speed, an ETA, and a quick glance at paused downloads or number of downloads. This fits the purpose of an ornament while also giving users useful insight during their exploration.</p>
             </div>
-            <img src="./img/vision-os/ornaments-sketch.jpg">
         </div>
     </section>
 
@@ -141,8 +145,10 @@
         <h1><span>Flow of Information</span></h1>
 
         <div class="section-details">
+            <img src="./img/vision-os/flow.jpg">
             <div class="details">
-                <p>Now that I had an idea of what the application’s purpose was, and Apple’s recommendation of how to properly layout information, it was time for me to lay out the navigation of pages. In terms of navigating through assets, the home page would be the main focus of looking through the Exploration page, containing a categories section that leads to a page filled with assets pertaining to that specific tag. Additionally, the search bar would also lead to a search inquiry page, displaying assets that match that inquiry. And lastly, the assets page would be the end of the user flow, giving users the option to decide on saving, downloading or reading more about that asset, before going back to explore.</p>
+                <h2>Narrowing down the user flow</h2>
+                <p>With a clear understanding of the application's purpose and Apple's recommended layout principles, I turned my attention to page navigation. The home page served as the focal point for exploring assets, featuring a categories section leading to asset-specific pages. The search bar directed users to inquiry results, while the asset page marked the endpoint, offering options to save, download, or learn more about assets before returning to exploration.</p>
             </div>
         </div>
     </section>
@@ -153,7 +159,7 @@
         <div class="section-details">
             <div class="details">
                 <h2>Creating visuals that align with VisionOS</h2>
-                <p>Now that I had a clear idea of the scope of the project and how that would flow inside an application, I started building a high fidelity wireframe. The first frame to tackle was the home page. From the start, windows in VisionOS don’t look like anything I’m familiar with from iOS, or MacOS. The windows are design with a visual system called ‘Glass Material’, which uses specular highlights and shadows to work in any lighting conditions. This is a bit tricky to mimic, considering the fact that the application should adapt to any setting the user is in.</p>
+                <p>With a defined project scope and application flow in mind, I began crafting high-fidelity wireframes, starting with the home page. VisionOS's unique 'Glass Material' design, characterized by specular highlights and shadows for adaptable lighting, presented a challenge in mimicking within the application, given the need for seamless adaptation to diverse user environments.</p>
             </div>
             <img src="./img/vision-os/visual-design.png">
         </div>
@@ -166,7 +172,7 @@
             <img src="./img/vision-os/typography.png">
             <div class="details">
                 <h2>Using SF Pro for consistency</h2>
-                <p>Although FontAwesome uses a custom font family, using it outside of their visual language might be jarring. This early into the platform, I didn’t want to experiment too much from the recommended visuals. It was better to experiment with the layout and interpret familiar experiences. With that in mind, the recommended text size is 15pt. But for situations where I would have to pair title text and body text, I needed a way to highlight the title. To solve this, I started by italicizing the body text, but this didn’t do a good job of separating the two. From a standard viewing distance, the body text was still too similar to differentiate body text from tittle text. So what I did instead to solve this was to have a lighter font weight on body text, and change the color of the body text to #D2D2D2, rather than #FFFFFF. </p>
+                <p>While FontAwesome uses a custom font family, I aimed to maintain consistency with their visual language, particularly in the early stages of the platform's development. To distinguish title text from body text when paired, I initially considered italicizing the body text, but this proved insufficient. Instead, I opted for a lighter font weight and adjusted the body text color.</p>
             </div>
         </div>
     </section>
@@ -204,7 +210,7 @@
         <div class="section-details">
             <div class="details">
                 <h2>Component for promotional content</h2>
-                <p>Following the layout I had sketched up earlier, I made the decision to include a banner on the home page to promote the application. This could have multiple use cases, ranging from subscribers acquisition, to content awareness. For the purposes of this  project, it was important to establish that component where it could be highlighted in the glass material OS. Like my previous research mentioned, adding components with an opaque background doesn’t compliment the look of VisionOS at all. So in order for me to add a banner, I had to include some element that was familiar to the rest of the visual language. A parted component with the same glass material, albeit a bit more highlighted to avoid blending in with the background, keeps the visuals consistent while also drawing attention to the component.
+                <p>Following my initial layout concept, I opted to integrate a homepage banner to promote the application, serving various purposes like subscriber acquisition and content awareness. To ensure alignment with VisionOS's aesthetics, I maintained consistency with the 'Glass Material' visual language, avoiding opaque backgrounds. I introduced a segmented element, subtly highlighted to maintain visual coherence while effectively drawing attention to the banner.
                 </p>
             </div>
         </div>
@@ -214,7 +220,7 @@
         <div class="section-details">
             <div class="details">
                 <h2>Glossy effect for the selection process</h2>
-                <p>Next up was the asset component, the heart of exploration. This was a bit tricky to nail. On one hand, I was set to having as many components as I could fit inside. But I quickly found out that did some disservice to the asset, showing very little detail. This also made exploration and decision making more difficult for users. With the added difficulty of making sure the typography was consistent, I decided to with a modest size that included some information about the asset, while giving it a fair size to communicate its value to users.
+                <p>Next, I tackled the asset component, the core of user exploration. Finding the right balance was challenging; initially, I aimed to maximize components but realized it compromised asset detail and user decision-making. To ensure consistency in typography and provide users with valuable information, I opted for a modest size that effectively communicated the asset's value.
                 </p>
             </div>
             <img src="./img/vision-os/asset-component.png">
