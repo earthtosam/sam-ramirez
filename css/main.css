@@ -49,6 +49,10 @@ h2 {
   margin-top: 50px;
 }
 
+.m-left {
+  margin-left: 6px;
+}
+
 
 /** Nav Bar **/
 
@@ -329,6 +333,16 @@ section .inline a {
 
   /** Home Page **/
 
+  body {
+    font-size: 14px;
+  }
+  section .section-details .details h2 {
+    margin-bottom: 10px;
+    font-size: 21px;
+  }
+  section .project-details .details-box h2 {
+    font-size: 21px;
+  }
   .project-card {
     margin: 0px auto 50px;
     display: flex;
