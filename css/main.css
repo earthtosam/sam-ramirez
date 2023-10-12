@@ -133,7 +133,7 @@ section .space {
 section h1 {
   font-size: 21px;
   padding-bottom: 6px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   border-bottom: solid 4px #1C80F5;
   width: fit-content;
 }
@@ -145,7 +145,7 @@ section .project-details {
 }
 
 section .project-details h2 {
-  margin: 0px auto 0px;
+  margin: 0px auto;
 }
 
 section .project-details p {
@@ -159,7 +159,7 @@ section .project-details span {
 
 section .project-details .details-box {
   width: 50%;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 section .section-details {
@@ -272,7 +272,7 @@ section .inline a {
 }
 
 .project-info h2 {
-  margin-bottom: 20px;
+  margin-bottom: 6px;
   font-size: 24px;
 }
 
@@ -354,7 +354,7 @@ section .inline a {
     padding-bottom: 36px;
   }
   section .project-card .project-info .sm-mt-30 {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   footer {
     display: block;
