@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
 
 
-/** Universal **/
+/** Global **/
 
 * {
   margin: 0;
@@ -10,26 +10,25 @@
 }
 
 body {
-  max-width: 1000px;
+  max-width: 1400px;
   margin: auto;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #444444;
 }
 
 .button {
   width: auto;
   color: #ffffff;
-  padding: 12px 24px !important;
+  padding: 10px 20px !important;
   background-color: #1C80F5;
   border-radius: 6px;
   text-decoration: none;
-  box-shadow: 0px 3px 20px rgb(93, 155, 255, 0.45);
+  transition: all 0.5s ease;
 }
 
 .button:hover {
   box-shadow: 0px 3px 20px rgb(45, 105, 200, 0.65);
-  transition: all 0.3s ease;
 }
 
 .button-inactive {
@@ -62,7 +61,10 @@ nav {
   color: #444444;
   display: flex;
   justify-content: space-between;
-  padding: 30px 0px;
+  padding: 20px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 nav #nav-icon {
@@ -80,17 +82,20 @@ nav ul {
 
 nav ul li {
   display: inline;
+  padding: 6px 12px;
+  border: 2px solid #1C80F5;
+  border-radius: 6px;
+  transition: all 0.5s ease;
 }
 
 nav ul li a {
-  color: #444444;
+  color: #1C80F5;
   text-decoration: none;
-  padding-left: 50px;
 }
 
-nav ul li a:hover {
-  color: #1C80F5;
-  transition: all 0.3s ease;
+nav ul li:hover {
+  cursor: pointer;
+  box-shadow: 0px 3px 20px rgb(45, 105, 200, 0.65);
 }
 
 nav ul li a.active {
@@ -111,8 +116,23 @@ footer .footer-links p {
   margin-bottom: 20px;
 }
 
-footer .footer-links .button {
+footer .footer-links a i {
   margin-right: 10px;
+}
+
+footer .footer-links .footer-button {
+  color: #1C80F5;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 6px 12px;
+  border: 2px solid #1C80F5;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+}
+
+footer .footer-links .footer-button:hover {
+  cursor: pointer;
+  box-shadow: 0px 3px 20px rgb(45, 105, 200, 0.65);
 }
 
 
@@ -123,7 +143,7 @@ section {
 }
 
 section .space {
-  margin: 100px 0px;
+  margin: 50px 0px;
 }
 
 .margin-top {
@@ -138,30 +158,6 @@ section h1 {
   width: fit-content;
 }
 
-section .project-details {
-  display: flex;
-  background-color: #ffffff;
-  flex-direction: column;
-}
-
-section .project-details h2 {
-  margin: 0px auto;
-}
-
-section .project-details p {
-  color: #777777;
-}
-
-section .project-details span {
-  font-style: italic;
-  font-weight: bold;
-}
-
-section .project-details .details-box {
-  width: 50%;
-  margin-top: 20px;
-}
-
 section .section-details {
   display: flex;
 }
@@ -171,7 +167,7 @@ section .section-details .details {
 }
 
 section .section-details .details p {
-  line-height: 28px;
+  line-height: 21px;
   color: #777777;
 }
 
@@ -189,7 +185,7 @@ section h1 span {
 }
 
 section .section-details img {
-  width: 50%;
+  width: 60%;
   border-radius: 12px;
 }
 
@@ -243,11 +239,79 @@ section .inline a {
 }
 
 
+/** Portfolio Section **/
+
+
+.portfolio-overview {
+  display: flex;
+  margin: 100px auto;
+  padding: 0px 30px;
+}
+
+.portfolio-summary {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.portfolio-summary .space-bottom {
+  margin-bottom: 36px;
+}
+
+.portfolio-section {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.portfolio-header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.portfolio-header h2 {
+  font-size: 48px;
+  color: #333;
+}
+
+.portfolio-divider {
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+
+.portfolio-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.portfolio-column {
+  flex-basis: calc(33.33% - 10px);
+  text-align: left;
+}
+
+.portfolio-column h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.portfolio-column p {
+  color: #555;
+}
+
+#cover-image {
+  width: 100% !important;
+  max-width: 1400px;
+}
+
+
 /** Home Page **/
 
 
 #intro {
   font-size: 32px;
+  margin: 200px 0px !important;
 }
 
 #intro span {
@@ -258,6 +322,7 @@ section .inline a {
   margin: 0px auto 50px;
   display: flex;
   justify-content: space-between;
+  align-items: top;
   border-radius: 20px;
 }
 
@@ -267,29 +332,29 @@ section .inline a {
 }
 
 .project-info {
+  display: flex;
   width: auto;
   margin: auto 50px;
 }
 
 .project-info h2 {
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   font-size: 24px;
 }
 
 .project-info p {
   padding-bottom: 36px;
-  line-height: 28px;
+  line-height: 21px;
   color: #777777;
 }
 
-
-/** SeeFood App **/
-
-
-#cover-image {
-  width: 100% !important;
-  max-width: 1400px;
+.card-divider {
+  width: 2px;
+  height: calc(auto + 30px);
+  background-color: #ddd;
+  margin-right: 20px;
 }
+
 
 /** Media Queries **/
 
@@ -329,15 +394,12 @@ section .inline a {
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 980px) {
 
   /** Home Page **/
   
   section .section-details .details h2 {
     margin-bottom: 10px;
-    font-size: 21px;
-  }
-  section .project-details .details-box h2 {
     font-size: 21px;
   }
   .project-card {
@@ -349,12 +411,8 @@ section .inline a {
     width: 100%;
   }
   .project-info {
-    width: auto;
-    margin: auto 0px;
-    padding-bottom: 36px;
-  }
-  section .project-card .project-info .sm-mt-30 {
-    margin-top: 20px;
+    width: 100%;
+    margin: 30px auto 80px;
   }
   footer {
     display: block;
@@ -365,19 +423,6 @@ section .inline a {
 
   /** Sections **/
 
-  section .project-details {
-    display: block;
-  }
-  section .project-details .details-box {
-    width: 100%;
-  }
-  section .project-details .details-box-col {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  section .project-details .details-box-col .box {
-    width: auto;
-  }
   section .section-details {
     display: block;
     margin-top: 50px;
@@ -396,16 +441,30 @@ section .inline a {
   .sm-mt-cover {
     margin: 30px 20px;
   }
-  #cover-image {
-    border-radius: 10px;
+
+  .portfolio-overview {
+    flex-direction: column;
   }
-  section .project-details h2 {
-    margin: 0px auto 10px;
+  .portfolio-section {
+    width: 100%;
   }
-  section .project-details p {
-    margin-bottom: 30px;
+  .portfolio-section .portfolio-header h2 {
+    font-size: 36px;
   }
-  section .details-box-col p {
-    margin-bottom: 10px;
+  .portfolio-summary {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 50px;
   }
+}
+
+@media (max-width: 520px) {
+
+  .portfolio-details {
+    flex-direction: column;
+  }
+  .portfolio-column {
+    margin-top: 50px;
+  }
+
 }
