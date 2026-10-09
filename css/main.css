@@ -21,7 +21,7 @@ body {
   width: auto;
   color: #ffffff;
   padding: 10px 20px !important;
-  background-color: #1C80F5;
+  background-color: #333333;
   border-radius: 6px;
   text-decoration: none;
   transition: all 0.5s ease;
@@ -83,13 +83,13 @@ nav ul {
 nav ul li {
   display: inline;
   padding: 6px 12px;
-  border: 2px solid #1C80F5;
   border-radius: 6px;
+  background-color: #333333;
   transition: all 0.5s ease;
 }
 
 nav ul li a {
-  color: #1C80F5;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -121,12 +121,12 @@ footer .footer-links a i {
 }
 
 footer .footer-links .footer-button {
-  color: #1C80F5;
+  color: #ffffff;
   text-decoration: none;
   margin-right: 10px;
   padding: 6px 12px;
-  border: 2px solid #1C80F5;
   border-radius: 6px;
+  background-color: #333333;
   transition: all 0.5s ease;
 }
 
@@ -273,6 +273,11 @@ section .inline a {
   color: #333;
 }
 
+.portfolio-header h2 span {
+  font-decoration: italic;
+  font-weight: lighter;
+}
+
 .portfolio-divider {
   width: 100%;
   height: 2px;
@@ -317,6 +322,7 @@ section .inline a {
 
 #intro span {
   color: #1C80F5;
+  font-weight: bold;
 }
 
 .project-card {
@@ -341,6 +347,10 @@ section .inline a {
 .project-info h2 {
   margin-bottom: 12px;
   font-size: 24px;
+}
+
+.project-info h2 span {
+  font-weight: lighter;
 }
 
 .project-info p {
